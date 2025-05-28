@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr" class="transition duration-300">
+<head>
+  <meta charset="UTF-8">
+  <title>Ders Not Hesaplayıcı</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Poppins', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white min-h-screen font-sans p-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-bold">📘 Bilkent Grade Calculator</h1>
+      <button onclick="toggleTheme()" class="text-sm underline">🌙 Change Theme</button>
+    </div>
+
+    <div class="mb-4 flex gap-2">
+      <select id="courseSelect" class="flex-1 border p-2 rounded-md bg-white text-black">
+        <option value="">-- Choose a Subject --</option>
+        <option value="ENG-101">ENG-101</option>
+        <option value="ENG-102">ENG-102</option>
+        <option value="MATH-101">MATH-101</option>
+        <option value="MATH-102">MATH-102</option>
+      </select>
+      <button onclick="addCourse()" class="bg-blue-500 text-white px-4 rounded-md hover:bg-blue-600 transition">Add</button>
+    </div>
+
+    <div id="formsArea" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+  </div>
+
+  <script src="script.js"> </script>
+</body>
+</html>
