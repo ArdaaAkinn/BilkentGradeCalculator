@@ -23,6 +23,31 @@ const courseConfigs = {
             ]
         },
 
+        "IR-101": 
+      {
+        tasks:
+        [
+        { name: "Midterm", weight: 35 },
+        { name: "Final", weight: 35 },
+        { name: "Quiz", weight: 20 },
+        { name: "Participation", weight: 10 }
+        ],
+        grading:
+        [
+            { min: 95, grade: "A" },
+            { min: 90, grade: "A-" },
+            { min: 86, grade: "B+" },
+            { min: 82, grade: "B" },
+            { min: 78, grade: "B-" },
+            { min: 74, grade: "C+" },
+            { min: 70, grade: "C" },
+            { min: 63, grade: "C-" },
+            { min: 57, grade: "D+" },
+            { min: 51, grade: "D" },
+            { min: 0, grade: "F" }
+        ]
+    },
+      
       "MATH-101": 
       {
         tasks:
@@ -30,7 +55,7 @@ const courseConfigs = {
         { name: "Midterm 1", weight: 80/3 },
         { name: "Midterm 2", weight: 80/3 },
         { name: "Final", weight: 80/3 },
-        { name: "Quizzes", weight: 1, maxScore: 10 },
+        { name: "Quizzes", weight: 10, maxScore: 10 },
         { name: "Homework", weight: 10 }
         ],
         grading:
@@ -49,6 +74,33 @@ const courseConfigs = {
         ]
     },
 
+    "PHYS-101": 
+      {
+        tasks:
+        [
+        { name: "Midterm 1", weight: 15 },
+        { name: "Midterm 2", weight: 20 },
+        { name: "Final", weight: 25 },
+        { name: "Lab", weight: 20 },
+        { name: "Quizzes", weight: 10, maxScore: 10 },
+        { name: "Homework", weight: 10 }
+        ],
+        grading:
+        [
+            { min: 85, grade: "A" },
+            { min: 80, grade: "A-" },
+            { min: 75, grade: "B+" },
+            { min: 70, grade: "B" },
+            { min: 65, grade: "B-" },
+            { min: 60, grade: "C+" },
+            { min: 55, grade: "C" },
+            { min: 50, grade: "C-" },
+            { min: 45, grade: "D+" },
+            { min: 40, grade: "D" },
+            { min: 0, grade: "F" }
+        ]
+    },
+
     "MATH-102": 
     {
         tasks:
@@ -56,7 +108,7 @@ const courseConfigs = {
         { name: "Midterm 1", weight: 80/3 },
         { name: "Midterm 2", weight: 80/3 },
         { name: "Final", weight: 80/3 },
-        { name: "Quizzes", weight: 1, maxScore: 10 },
+        { name: "Quizzes", weight: 10, maxScore: 10 },
         { name: "Homework", weight: 10 }
         ],
         grading:
@@ -101,8 +153,60 @@ const courseConfigs = {
             { min: 59, grade: "D" },
             { min: 0, grade: "F" }
         ]
+    },
+
+    "PHYS-102": 
+      {
+        tasks:
+        [
+        { name: "Midterm 1", weight: 20 },
+        { name: "Midterm 2", weight: 20 },
+        { name: "Final", weight: 20 },
+        { name: "Lab", weight: 20 },
+        { name: "Quizzes", weight: 10, maxScore: 10 },
+        { name: "Homework", weight: 10 }
+        ],
+        grading:
+        [
+            { min: 85, grade: "A" },
+            { min: 80, grade: "A-" },
+            { min: 75, grade: "B+" },
+            { min: 70, grade: "B" },
+            { min: 65, grade: "B-" },
+            { min: 60, grade: "C+" },
+            { min: 55, grade: "C" },
+            { min: 50, grade: "C-" },
+            { min: 45, grade: "D+" },
+            { min: 40, grade: "D" },
+            { min: 0, grade: "F" }
+        ]
+    },
+    "POLS-102": 
+      {
+        tasks:
+        [
+        { name: "Midterm", weight: 40 },
+        { name: "Final", weight: 40 },
+        { name: "Quiz 1", weight: 10},
+        { name: "Quiz 2", weight: 10}
+        ],
+        grading:
+        [
+            { min: 95, grade: "A" },
+            { min: 90, grade: "A-" },
+            { min: 86, grade: "B+" },
+            { min: 82, grade: "B" },
+            { min: 78, grade: "B-" },
+            { min: 74, grade: "C+" },
+            { min: 70, grade: "C" },
+            { min: 63, grade: "C-" },
+            { min: 57, grade: "D+" },
+            { min: 51, grade: "D" },
+            { min: 0, grade: "F" }
+        ]
     }
     };
+
 
     const addedCourses = new Set();
 
