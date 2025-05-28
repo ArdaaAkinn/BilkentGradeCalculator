@@ -132,12 +132,12 @@ const courseConfigs = {
     {
         tasks: 
         [
-            { name: "Library Skills Task", weight: 5 },
-            { name: "Academic Essay", weight: 20 },
-            { name: "Oral Presentation", weight: 20 },
-            { name: "Research Paper Outline", weight: 10 },
-            { name: "Research Paper", weight: 30 },
-            { name: "Interview", weight: 15 },
+            { name: "Library Skills Task", weight: 5, maxScore: 10 },
+            { name: "Academic Essay", weight: 20, maxScore: 22 },
+            { name: "Oral Presentation", weight: 20, maxScore: 22 },
+            { name: "Research Paper Outline", weight: 10, maxScore: 15 },
+            { name: "Research Paper", weight: 30, maxScore: 23 },
+            { name: "Interview", weight: 15, maxScore: 60 },
         ],
         grading:
         [
